@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Violet);
+    background-image: url(./images/bg-desktop.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Poppins, Open Sans;
+}
+
+div.container {
+    height: 90vh;
+    width: 100vw;
+
+}
+
+header {
+    padding: 4rem 0rem 0rem 5rem;
+}
+
+.inf {
+    padding: 7rem 0rem 0rem 5rem;
+}
+
+.pag-left {
+    display: flex;
+    width: 100vw;
+}
+
+.text {
+    padding: 7rem 7.7rem 6rem 3rem;
+    width: 50%;
+    color: white;
+}
+
+h1 {
+    line-height: 4.5rem;
+    padding-right: 5rem;
+    font-size: 35pt;
+}
+
+p {
+    padding-top: 1.3rem;
+    line-height: 1.9rem;
+    padding-bottom: 2rem;
+    padding-right: 13rem;
+    font-style: normal;
+    font-size: 14pt;
+}
+
+button {
+    height: 34%;
+    width: 28%;
+    font-size: 1.1rem;
+    color: var(--Violet);
+    background-color: white;
+    border-style: none;
+    border-radius: 50px;
+    box-shadow: 4px 4px 21px -5px rgba(0, 0, 0, 0.8);
+}
+
+.click{
+    height: 35%;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--Soft-Magenta);
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: end;
+    height: 20%;
+    padding-right: 5rem;
+}
+
+
+i:hover {
+    color: var(--Soft-Magenta);
+    border: 2px solid var(--Soft-Magenta);
+}
+
+li {
+    display: inline-block;
+    margin: 16px;
+    font-size: 20pt;
+}
+
+.fa {
+    position: relative;
+    font-size: 24pt;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border: 2px solid white;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 6.5px;
+}
+
+@media screen and (max-width: 1440px) {
+
+    body {
+        background-attachment: fixed;
+    }
+
+    div.container {
+        display: flexbox;
+        min-height: 90vh;
+        overflow: hidden;
+    }
+
+    header {
+        padding: 3rem 0rem 4.5rem 5rem;
+    }
+
+    .pag-left {
+        display: flex;
+        width: 100vw;
+    }
+
+    .inf {
+        padding: 1rem 1rem 8.1rem 6.8rem
+    }
+
+    .text {
+        width: 50%;
+        padding: 3rem 0rem 0rem 2rem;
+    }
+
+    h1 {
+        padding-right: 9rem;
+        font-size: 29pt;
+        line-height: normal;
+    }
+
+    p {
+        padding: 1.3rem 7rem 2rem 0rem;
+        line-height: 1.5rem;
+        font-size: 11pt;
+    }
+
+    button {
+        width: 31%;
+        height: 25%;
+        font-size: 11pt;
+    }
+}
+
+@media screen and (min-width: 330px) and (max-width: 600px) {
+    body {
+        background-image: url(images/bg-mobile.svg);
+    }
+
+    div.container {
+        display: grid;
+        height: 70vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    header {
+        padding: 1rem 0rem 0rem 2rem;
+        position: absolute;
+    }
+
+    header img{
+        width: 70%;
+
+    }
+
+    .pag-left {
+        display: grid;
+    }
+
+    img.inf {
+        width: 110%;
+    }
+
+    .inf {
+        padding: 0rem 4.5rem 2rem 2.5rem;
+        position: relative;
+        top: 7rem;
+    }
+
+    .text {
+        width: 100vw;
+        padding: 0;
+    }
+
+    h1 {
+        padding: 0rem 2rem 0rem 2rem;
+        text-align: center;
+        font-size: 19pt;
+        line-height: normal;
+    }
+
+    p{
+        padding: 0rem;
+        text-align: center;
+        height: 36%;
+        font-size: 10pt;
+    }
+
+    .click{
+        padding: 1.5rem 0rem 0rem 6rem;
+        width: 194%;
+        height: 125%;
+    }
+
+    .txt{
+        padding: 1rem 3.2rem 0rem 3rem;
+    }
+
+    li{
+        margin: 12px;
+    }
+
+    footer{
+        padding-bottom: 1rem;
+    }
+
+    button {
+        width: 31%;
+        height: 11%;
+        font-size: 11pt;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    body{
+        background-color: aquamarine;
+    }
+    
+}
